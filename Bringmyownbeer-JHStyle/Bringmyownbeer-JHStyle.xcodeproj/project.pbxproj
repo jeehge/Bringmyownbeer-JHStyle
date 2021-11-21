@@ -1,0 +1,602 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E964122D274A635300A69ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964122C274A635300A69ECA /* AppDelegate.swift */; };
+		E964122F274A635300A69ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964122E274A635300A69ECA /* ViewController.swift */; };
+		E9641231274A635500A69ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9641230274A635500A69ECA /* Assets.xcassets */; };
+		E9641234274A635500A69ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9641232274A635500A69ECA /* Main.storyboard */; };
+		E964123F274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */; };
+		E9641249274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */; };
+		E964124B274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E964123B274A635500A69ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9641221274A635300A69ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9641228274A635300A69ECA;
+			remoteInfo = "Bringmyownbeer-JHStyle";
+		};
+		E9641245274A635500A69ECA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E9641221274A635300A69ECA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E9641228274A635300A69ECA;
+			remoteInfo = "Bringmyownbeer-JHStyle";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bringmyownbeer-JHStyle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E964122C274A635300A69ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E964122E274A635300A69ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		E9641230274A635500A69ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E9641233274A635500A69ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E9641235274A635500A69ECA /* Bringmyownbeer_JHStyle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bringmyownbeer_JHStyle.entitlements; sourceTree = "<group>"; };
+		E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleTests.swift; sourceTree = "<group>"; };
+		E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITests.swift; sourceTree = "<group>"; };
+		E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E9641226274A635300A69ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641237274A635500A69ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641241274A635500A69ECA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E9641220274A635300A69ECA = {
+			isa = PBXGroup;
+			children = (
+				E964122B274A635300A69ECA /* Bringmyownbeer-JHStyle */,
+				E964123D274A635500A69ECA /* Bringmyownbeer-JHStyleTests */,
+				E9641247274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */,
+				E964122A274A635300A69ECA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E964122A274A635300A69ECA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */,
+				E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */,
+				E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E964122B274A635300A69ECA /* Bringmyownbeer-JHStyle */ = {
+			isa = PBXGroup;
+			children = (
+				E964122C274A635300A69ECA /* AppDelegate.swift */,
+				E964122E274A635300A69ECA /* ViewController.swift */,
+				E9641230274A635500A69ECA /* Assets.xcassets */,
+				E9641232274A635500A69ECA /* Main.storyboard */,
+				E9641235274A635500A69ECA /* Bringmyownbeer_JHStyle.entitlements */,
+			);
+			path = "Bringmyownbeer-JHStyle";
+			sourceTree = "<group>";
+		};
+		E964123D274A635500A69ECA /* Bringmyownbeer-JHStyleTests */ = {
+			isa = PBXGroup;
+			children = (
+				E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */,
+			);
+			path = "Bringmyownbeer-JHStyleTests";
+			sourceTree = "<group>";
+		};
+		E9641247274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */,
+				E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */,
+			);
+			path = "Bringmyownbeer-JHStyleUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E964124E274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */;
+			buildPhases = (
+				E9641225274A635300A69ECA /* Sources */,
+				E9641226274A635300A69ECA /* Frameworks */,
+				E9641227274A635300A69ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bringmyownbeer-JHStyle";
+			productName = "Bringmyownbeer-JHStyle";
+			productReference = E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */;
+			productType = "com.apple.product-type.application";
+		};
+		E9641239274A635500A69ECA /* Bringmyownbeer-JHStyleTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9641251274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */;
+			buildPhases = (
+				E9641236274A635500A69ECA /* Sources */,
+				E9641237274A635500A69ECA /* Frameworks */,
+				E9641238274A635500A69ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E964123C274A635500A69ECA /* PBXTargetDependency */,
+			);
+			name = "Bringmyownbeer-JHStyleTests";
+			productName = "Bringmyownbeer-JHStyleTests";
+			productReference = E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E9641243274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E9641254274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */;
+			buildPhases = (
+				E9641240274A635500A69ECA /* Sources */,
+				E9641241274A635500A69ECA /* Frameworks */,
+				E9641242274A635500A69ECA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E9641246274A635500A69ECA /* PBXTargetDependency */,
+			);
+			name = "Bringmyownbeer-JHStyleUITests";
+			productName = "Bringmyownbeer-JHStyleUITests";
+			productReference = E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E9641221274A635300A69ECA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1310;
+				LastUpgradeCheck = 1310;
+				TargetAttributes = {
+					E9641228274A635300A69ECA = {
+						CreatedOnToolsVersion = 13.1;
+					};
+					E9641239274A635500A69ECA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E9641228274A635300A69ECA;
+					};
+					E9641243274A635500A69ECA = {
+						CreatedOnToolsVersion = 13.1;
+						TestTargetID = E9641228274A635300A69ECA;
+					};
+				};
+			};
+			buildConfigurationList = E9641224274A635300A69ECA /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E9641220274A635300A69ECA;
+			productRefGroup = E964122A274A635300A69ECA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */,
+				E9641239274A635500A69ECA /* Bringmyownbeer-JHStyleTests */,
+				E9641243274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E9641227274A635300A69ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9641231274A635500A69ECA /* Assets.xcassets in Resources */,
+				E9641234274A635500A69ECA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641238274A635500A69ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641242274A635500A69ECA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E9641225274A635300A69ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E964122F274A635300A69ECA /* ViewController.swift in Sources */,
+				E964122D274A635300A69ECA /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641236274A635500A69ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E964123F274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E9641240274A635500A69ECA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E964124B274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */,
+				E9641249274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E964123C274A635500A69ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */;
+			targetProxy = E964123B274A635500A69ECA /* PBXContainerItemProxy */;
+		};
+		E9641246274A635500A69ECA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */;
+			targetProxy = E9641245274A635500A69ECA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E9641232274A635500A69ECA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E9641233274A635500A69ECA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E964124C274A635500A69ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E964124D274A635500A69ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		E964124F274A635500A69ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bringmyownbeer-JHStyle/Bringmyownbeer_JHStyle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E9641250274A635500A69ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Bringmyownbeer-JHStyle/Bringmyownbeer_JHStyle.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_NSMainStoryboardFile = Main;
+				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyle";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E9641252274A635500A69ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Contents/MacOS/Bringmyownbeer-JHStyle";
+			};
+			name = Debug;
+		};
+		E9641253274A635500A69ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Contents/MacOS/Bringmyownbeer-JHStyle";
+			};
+			name = Release;
+		};
+		E9641255274A635500A69ECA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Bringmyownbeer-JHStyle";
+			};
+			name = Debug;
+		};
+		E9641256274A635500A69ECA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = "Bringmyownbeer-JHStyle";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E9641224274A635300A69ECA /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E964124C274A635500A69ECA /* Debug */,
+				E964124D274A635500A69ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E964124E274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E964124F274A635500A69ECA /* Debug */,
+				E9641250274A635500A69ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9641251274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9641252274A635500A69ECA /* Debug */,
+				E9641253274A635500A69ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E9641254274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E9641255274A635500A69ECA /* Debug */,
+				E9641256274A635500A69ECA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E9641221274A635300A69ECA /* Project object */;
+}
