@@ -7,62 +7,70 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E964122D274A635300A69ECA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964122C274A635300A69ECA /* AppDelegate.swift */; };
-		E964122F274A635300A69ECA /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964122E274A635300A69ECA /* ViewController.swift */; };
-		E9641231274A635500A69ECA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E9641230274A635500A69ECA /* Assets.xcassets */; };
-		E9641234274A635500A69ECA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E9641232274A635500A69ECA /* Main.storyboard */; };
-		E964123F274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */; };
-		E9641249274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */; };
-		E964124B274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */; };
+		E987D0F4274D4A2900249FF1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D0F3274D4A2900249FF1 /* AppDelegate.swift */; };
+		E987D0F6274D4A2900249FF1 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D0F5274D4A2900249FF1 /* SceneDelegate.swift */; };
+		E987D0F8274D4A2900249FF1 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D0F7274D4A2900249FF1 /* ListViewController.swift */; };
+		E987D0FB274D4A2900249FF1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987D0F9274D4A2900249FF1 /* Main.storyboard */; };
+		E987D0FD274D4A2A00249FF1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E987D0FC274D4A2A00249FF1 /* Assets.xcassets */; };
+		E987D100274D4A2A00249FF1 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E987D0FE274D4A2A00249FF1 /* LaunchScreen.storyboard */; };
+		E987D10B274D4A2A00249FF1 /* Bringmyownbeer_JHStyleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D10A274D4A2A00249FF1 /* Bringmyownbeer_JHStyleTests.swift */; };
+		E987D115274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D114274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITests.swift */; };
+		E987D117274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D116274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */; };
+		E987D127274D4D5600249FF1 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D126274D4D5600249FF1 /* DetailViewController.swift */; };
+		E987D129274D4D6E00249FF1 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D128274D4D6E00249FF1 /* BaseViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		E964123B274A635500A69ECA /* PBXContainerItemProxy */ = {
+		E987D107274D4A2A00249FF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9641221274A635300A69ECA /* Project object */;
+			containerPortal = E987D0E8274D4A2900249FF1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9641228274A635300A69ECA;
+			remoteGlobalIDString = E987D0EF274D4A2900249FF1;
 			remoteInfo = "Bringmyownbeer-JHStyle";
 		};
-		E9641245274A635500A69ECA /* PBXContainerItemProxy */ = {
+		E987D111274D4A2A00249FF1 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = E9641221274A635300A69ECA /* Project object */;
+			containerPortal = E987D0E8274D4A2900249FF1 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = E9641228274A635300A69ECA;
+			remoteGlobalIDString = E987D0EF274D4A2900249FF1;
 			remoteInfo = "Bringmyownbeer-JHStyle";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bringmyownbeer-JHStyle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E964122C274A635300A69ECA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E964122E274A635300A69ECA /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E9641230274A635500A69ECA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		E9641233274A635500A69ECA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E9641235274A635500A69ECA /* Bringmyownbeer_JHStyle.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Bringmyownbeer_JHStyle.entitlements; sourceTree = "<group>"; };
-		E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleTests.swift; sourceTree = "<group>"; };
-		E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITests.swift; sourceTree = "<group>"; };
-		E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E987D0F0274D4A2900249FF1 /* Bringmyownbeer-JHStyle.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bringmyownbeer-JHStyle.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E987D0F3274D4A2900249FF1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		E987D0F5274D4A2900249FF1 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		E987D0F7274D4A2900249FF1 /* ListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		E987D0FA274D4A2900249FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		E987D0FC274D4A2A00249FF1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E987D0FF274D4A2A00249FF1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		E987D101274D4A2A00249FF1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E987D106274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E987D10A274D4A2A00249FF1 /* Bringmyownbeer_JHStyleTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleTests.swift; sourceTree = "<group>"; };
+		E987D110274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Bringmyownbeer-JHStyleUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E987D114274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITests.swift; sourceTree = "<group>"; };
+		E987D116274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bringmyownbeer_JHStyleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		E987D126274D4D5600249FF1 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		E987D128274D4D6E00249FF1 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		E9641226274A635300A69ECA /* Frameworks */ = {
+		E987D0ED274D4A2900249FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641237274A635500A69ECA /* Frameworks */ = {
+		E987D103274D4A2A00249FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641241274A635500A69ECA /* Frameworks */ = {
+		E987D10D274D4A2A00249FF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -72,65 +80,93 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		E9641220274A635300A69ECA = {
+		E987D0E7274D4A2900249FF1 = {
 			isa = PBXGroup;
 			children = (
-				E964122B274A635300A69ECA /* Bringmyownbeer-JHStyle */,
-				E964123D274A635500A69ECA /* Bringmyownbeer-JHStyleTests */,
-				E9641247274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */,
-				E964122A274A635300A69ECA /* Products */,
+				E987D0F2274D4A2900249FF1 /* Bringmyownbeer-JHStyle */,
+				E987D109274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests */,
+				E987D113274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests */,
+				E987D0F1274D4A2900249FF1 /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		E964122A274A635300A69ECA /* Products */ = {
+		E987D0F1274D4A2900249FF1 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */,
-				E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */,
-				E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */,
+				E987D0F0274D4A2900249FF1 /* Bringmyownbeer-JHStyle.app */,
+				E987D106274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests.xctest */,
+				E987D110274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		E964122B274A635300A69ECA /* Bringmyownbeer-JHStyle */ = {
+		E987D0F2274D4A2900249FF1 /* Bringmyownbeer-JHStyle */ = {
 			isa = PBXGroup;
 			children = (
-				E964122C274A635300A69ECA /* AppDelegate.swift */,
-				E964122E274A635300A69ECA /* ViewController.swift */,
-				E9641230274A635500A69ECA /* Assets.xcassets */,
-				E9641232274A635500A69ECA /* Main.storyboard */,
-				E9641235274A635500A69ECA /* Bringmyownbeer_JHStyle.entitlements */,
+				E987D125274D4A4300249FF1 /* Utils */,
+				E987D124274D4A3B00249FF1 /* ViewController */,
+				E987D123274D4A3500249FF1 /* Common */,
+				E987D0F3274D4A2900249FF1 /* AppDelegate.swift */,
+				E987D0F5274D4A2900249FF1 /* SceneDelegate.swift */,
+				E987D0FC274D4A2A00249FF1 /* Assets.xcassets */,
+				E987D0FE274D4A2A00249FF1 /* LaunchScreen.storyboard */,
+				E987D101274D4A2A00249FF1 /* Info.plist */,
 			);
 			path = "Bringmyownbeer-JHStyle";
 			sourceTree = "<group>";
 		};
-		E964123D274A635500A69ECA /* Bringmyownbeer-JHStyleTests */ = {
+		E987D109274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests */ = {
 			isa = PBXGroup;
 			children = (
-				E964123E274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift */,
+				E987D10A274D4A2A00249FF1 /* Bringmyownbeer_JHStyleTests.swift */,
 			);
 			path = "Bringmyownbeer-JHStyleTests";
 			sourceTree = "<group>";
 		};
-		E9641247274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */ = {
+		E987D113274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests */ = {
 			isa = PBXGroup;
 			children = (
-				E9641248274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift */,
-				E964124A274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */,
+				E987D114274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITests.swift */,
+				E987D116274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift */,
 			);
 			path = "Bringmyownbeer-JHStyleUITests";
+			sourceTree = "<group>";
+		};
+		E987D123274D4A3500249FF1 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		E987D124274D4A3B00249FF1 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E987D128274D4D6E00249FF1 /* BaseViewController.swift */,
+				E987D0F7274D4A2900249FF1 /* ListViewController.swift */,
+				E987D126274D4D5600249FF1 /* DetailViewController.swift */,
+				E987D0F9274D4A2900249FF1 /* Main.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E987D125274D4A4300249FF1 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */ = {
+		E987D0EF274D4A2900249FF1 /* Bringmyownbeer-JHStyle */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E964124E274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */;
+			buildConfigurationList = E987D11A274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */;
 			buildPhases = (
-				E9641225274A635300A69ECA /* Sources */,
-				E9641226274A635300A69ECA /* Frameworks */,
-				E9641227274A635300A69ECA /* Resources */,
+				E987D0EC274D4A2900249FF1 /* Sources */,
+				E987D0ED274D4A2900249FF1 /* Frameworks */,
+				E987D0EE274D4A2900249FF1 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -138,69 +174,69 @@
 			);
 			name = "Bringmyownbeer-JHStyle";
 			productName = "Bringmyownbeer-JHStyle";
-			productReference = E9641229274A635300A69ECA /* Bringmyownbeer-JHStyle.app */;
+			productReference = E987D0F0274D4A2900249FF1 /* Bringmyownbeer-JHStyle.app */;
 			productType = "com.apple.product-type.application";
 		};
-		E9641239274A635500A69ECA /* Bringmyownbeer-JHStyleTests */ = {
+		E987D105274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9641251274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */;
+			buildConfigurationList = E987D11D274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */;
 			buildPhases = (
-				E9641236274A635500A69ECA /* Sources */,
-				E9641237274A635500A69ECA /* Frameworks */,
-				E9641238274A635500A69ECA /* Resources */,
+				E987D102274D4A2A00249FF1 /* Sources */,
+				E987D103274D4A2A00249FF1 /* Frameworks */,
+				E987D104274D4A2A00249FF1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E964123C274A635500A69ECA /* PBXTargetDependency */,
+				E987D108274D4A2A00249FF1 /* PBXTargetDependency */,
 			);
 			name = "Bringmyownbeer-JHStyleTests";
 			productName = "Bringmyownbeer-JHStyleTests";
-			productReference = E964123A274A635500A69ECA /* Bringmyownbeer-JHStyleTests.xctest */;
+			productReference = E987D106274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		E9641243274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */ = {
+		E987D10F274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = E9641254274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */;
+			buildConfigurationList = E987D120274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */;
 			buildPhases = (
-				E9641240274A635500A69ECA /* Sources */,
-				E9641241274A635500A69ECA /* Frameworks */,
-				E9641242274A635500A69ECA /* Resources */,
+				E987D10C274D4A2A00249FF1 /* Sources */,
+				E987D10D274D4A2A00249FF1 /* Frameworks */,
+				E987D10E274D4A2A00249FF1 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				E9641246274A635500A69ECA /* PBXTargetDependency */,
+				E987D112274D4A2A00249FF1 /* PBXTargetDependency */,
 			);
 			name = "Bringmyownbeer-JHStyleUITests";
 			productName = "Bringmyownbeer-JHStyleUITests";
-			productReference = E9641244274A635500A69ECA /* Bringmyownbeer-JHStyleUITests.xctest */;
+			productReference = E987D110274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		E9641221274A635300A69ECA /* Project object */ = {
+		E987D0E8274D4A2900249FF1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
 				LastSwiftUpdateCheck = 1310;
 				LastUpgradeCheck = 1310;
 				TargetAttributes = {
-					E9641228274A635300A69ECA = {
+					E987D0EF274D4A2900249FF1 = {
 						CreatedOnToolsVersion = 13.1;
 					};
-					E9641239274A635500A69ECA = {
+					E987D105274D4A2A00249FF1 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = E9641228274A635300A69ECA;
+						TestTargetID = E987D0EF274D4A2900249FF1;
 					};
-					E9641243274A635500A69ECA = {
+					E987D10F274D4A2A00249FF1 = {
 						CreatedOnToolsVersion = 13.1;
-						TestTargetID = E9641228274A635300A69ECA;
+						TestTargetID = E987D0EF274D4A2900249FF1;
 					};
 				};
 			};
-			buildConfigurationList = E9641224274A635300A69ECA /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */;
+			buildConfigurationList = E987D0EB274D4A2900249FF1 /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */;
 			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -208,36 +244,37 @@
 				en,
 				Base,
 			);
-			mainGroup = E9641220274A635300A69ECA;
-			productRefGroup = E964122A274A635300A69ECA /* Products */;
+			mainGroup = E987D0E7274D4A2900249FF1;
+			productRefGroup = E987D0F1274D4A2900249FF1 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */,
-				E9641239274A635500A69ECA /* Bringmyownbeer-JHStyleTests */,
-				E9641243274A635500A69ECA /* Bringmyownbeer-JHStyleUITests */,
+				E987D0EF274D4A2900249FF1 /* Bringmyownbeer-JHStyle */,
+				E987D105274D4A2A00249FF1 /* Bringmyownbeer-JHStyleTests */,
+				E987D10F274D4A2A00249FF1 /* Bringmyownbeer-JHStyleUITests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		E9641227274A635300A69ECA /* Resources */ = {
+		E987D0EE274D4A2900249FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E9641231274A635500A69ECA /* Assets.xcassets in Resources */,
-				E9641234274A635500A69ECA /* Main.storyboard in Resources */,
+				E987D100274D4A2A00249FF1 /* LaunchScreen.storyboard in Resources */,
+				E987D0FD274D4A2A00249FF1 /* Assets.xcassets in Resources */,
+				E987D0FB274D4A2900249FF1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641238274A635500A69ECA /* Resources */ = {
+		E987D104274D4A2A00249FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641242274A635500A69ECA /* Resources */ = {
+		E987D10E274D4A2A00249FF1 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -247,60 +284,71 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E9641225274A635300A69ECA /* Sources */ = {
+		E987D0EC274D4A2900249FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E964122F274A635300A69ECA /* ViewController.swift in Sources */,
-				E964122D274A635300A69ECA /* AppDelegate.swift in Sources */,
+				E987D129274D4D6E00249FF1 /* BaseViewController.swift in Sources */,
+				E987D0F8274D4A2900249FF1 /* ListViewController.swift in Sources */,
+				E987D0F4274D4A2900249FF1 /* AppDelegate.swift in Sources */,
+				E987D0F6274D4A2900249FF1 /* SceneDelegate.swift in Sources */,
+				E987D127274D4D5600249FF1 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641236274A635500A69ECA /* Sources */ = {
+		E987D102274D4A2A00249FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E964123F274A635500A69ECA /* Bringmyownbeer_JHStyleTests.swift in Sources */,
+				E987D10B274D4A2A00249FF1 /* Bringmyownbeer_JHStyleTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		E9641240274A635500A69ECA /* Sources */ = {
+		E987D10C274D4A2A00249FF1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E964124B274A635500A69ECA /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */,
-				E9641249274A635500A69ECA /* Bringmyownbeer_JHStyleUITests.swift in Sources */,
+				E987D117274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITestsLaunchTests.swift in Sources */,
+				E987D115274D4A2A00249FF1 /* Bringmyownbeer_JHStyleUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		E964123C274A635500A69ECA /* PBXTargetDependency */ = {
+		E987D108274D4A2A00249FF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */;
-			targetProxy = E964123B274A635500A69ECA /* PBXContainerItemProxy */;
+			target = E987D0EF274D4A2900249FF1 /* Bringmyownbeer-JHStyle */;
+			targetProxy = E987D107274D4A2A00249FF1 /* PBXContainerItemProxy */;
 		};
-		E9641246274A635500A69ECA /* PBXTargetDependency */ = {
+		E987D112274D4A2A00249FF1 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = E9641228274A635300A69ECA /* Bringmyownbeer-JHStyle */;
-			targetProxy = E9641245274A635500A69ECA /* PBXContainerItemProxy */;
+			target = E987D0EF274D4A2900249FF1 /* Bringmyownbeer-JHStyle */;
+			targetProxy = E987D111274D4A2A00249FF1 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E9641232274A635500A69ECA /* Main.storyboard */ = {
+		E987D0F9274D4A2900249FF1 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				E9641233274A635500A69ECA /* Base */,
+				E987D0FA274D4A2900249FF1 /* Base */,
 			);
 			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		E987D0FE274D4A2A00249FF1 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E987D0FF274D4A2A00249FF1 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		E964124C274A635500A69ECA /* Debug */ = {
+		E987D118274D4A2A00249FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -351,17 +399,17 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
-		E964124D274A635500A69ECA /* Release */ = {
+		E987D119274D4A2A00249FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -406,153 +454,158 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
-				SDKROOT = macosx;
+				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		E964124F274A635500A69ECA /* Debug */ = {
+		E987D11B274D4A2A00249FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bringmyownbeer-JHStyle/Bringmyownbeer_JHStyle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
-		E9641250274A635500A69ECA /* Release */ = {
+		E987D11C274D4A2A00249FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				CODE_SIGN_ENTITLEMENTS = "Bringmyownbeer-JHStyle/Bringmyownbeer_JHStyle.entitlements";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				INFOPLIST_KEY_NSMainStoryboardFile = Main;
-				INFOPLIST_KEY_NSPrincipalClass = NSApplication;
+				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Info.plist";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
+					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyle";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
-		E9641252274A635500A69ECA /* Debug */ = {
+		E987D11E274D4A2A00249FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Contents/MacOS/Bringmyownbeer-JHStyle";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Bringmyownbeer-JHStyle";
 			};
 			name = Debug;
 		};
-		E9641253274A635500A69ECA /* Release */ = {
+		E987D11F274D4A2A00249FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
-				MACOSX_DEPLOYMENT_TARGET = 11.6;
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Contents/MacOS/Bringmyownbeer-JHStyle";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Bringmyownbeer-JHStyle.app/Bringmyownbeer-JHStyle";
 			};
 			name = Release;
 		};
-		E9641255274A635500A69ECA /* Debug */ = {
+		E987D121274D4A2A00249FF1 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bringmyownbeer-JHStyle";
 			};
 			name = Debug;
 		};
-		E9641256274A635500A69ECA /* Release */ = {
+		E987D122274D4A2A00249FF1 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "jeehge.study.beer.Bringmyownbeer-JHStyleUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = NO;
 				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_TARGET_NAME = "Bringmyownbeer-JHStyle";
 			};
 			name = Release;
@@ -560,43 +613,43 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		E9641224274A635300A69ECA /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */ = {
+		E987D0EB274D4A2900249FF1 /* Build configuration list for PBXProject "Bringmyownbeer-JHStyle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E964124C274A635500A69ECA /* Debug */,
-				E964124D274A635500A69ECA /* Release */,
+				E987D118274D4A2A00249FF1 /* Debug */,
+				E987D119274D4A2A00249FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E964124E274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */ = {
+		E987D11A274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyle" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E964124F274A635500A69ECA /* Debug */,
-				E9641250274A635500A69ECA /* Release */,
+				E987D11B274D4A2A00249FF1 /* Debug */,
+				E987D11C274D4A2A00249FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9641251274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */ = {
+		E987D11D274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9641252274A635500A69ECA /* Debug */,
-				E9641253274A635500A69ECA /* Release */,
+				E987D11E274D4A2A00249FF1 /* Debug */,
+				E987D11F274D4A2A00249FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		E9641254274A635500A69ECA /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */ = {
+		E987D120274D4A2A00249FF1 /* Build configuration list for PBXNativeTarget "Bringmyownbeer-JHStyleUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				E9641255274A635500A69ECA /* Debug */,
-				E9641256274A635500A69ECA /* Release */,
+				E987D121274D4A2A00249FF1 /* Debug */,
+				E987D122274D4A2A00249FF1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = E9641221274A635300A69ECA /* Project object */;
+	rootObject = E987D0E8274D4A2900249FF1 /* Project object */;
 }
