@@ -7,6 +7,6 @@
 
 import UIKit
 
-final class BaseViewController: UIViewController {
+class BaseViewController: UIViewController, ViewControllerFromStoryBoard {
     
 }
