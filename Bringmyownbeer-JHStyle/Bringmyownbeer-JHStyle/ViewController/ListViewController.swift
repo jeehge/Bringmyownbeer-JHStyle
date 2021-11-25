@@ -20,6 +20,7 @@ final class ListViewController: BaseViewController {
         super.viewDidLoad()
         
         configTableView()
+        getBeerList()
     }
     
     private func configTableView() {
@@ -45,6 +46,17 @@ final class ListViewController: BaseViewController {
            tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
            tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
+    }
+    
+    private func getBeerList() {
+        NetworkManager.request(api: .beer, parameters: nil) { (result: Result <[Beer], Error>) in
+            switch result {
+            case .success(let result):
+                print(result)
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }
 
