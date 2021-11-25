@@ -15,6 +15,8 @@ final class ListViewController: BaseViewController {
         return tableview
     }()
     
+    private var beerList: [Beer] = []
+    
     // MARK: - Life Cycle
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -49,10 +51,12 @@ final class ListViewController: BaseViewController {
     }
     
     private func getBeerList() {
-        NetworkManager.request(api: .beer, parameters: nil) { (result: Result <[Beer], Error>) in
+        NetworkManager.request(api: .beer, parameters: nil) { [weak self] (result: Result <[Beer], Error>) in
+            guard let self = self else { return }
             switch result {
             case .success(let result):
-                print(result)
+                self.beerList = result
+                self.tableView.reloadData()
             case .failure(let error):
                 print(error)
             }
@@ -63,7 +67,7 @@ final class ListViewController: BaseViewController {
 // MARK: - UITableViewDataSource
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return beerList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
