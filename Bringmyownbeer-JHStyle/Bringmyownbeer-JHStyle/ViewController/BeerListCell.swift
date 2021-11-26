@@ -7,12 +7,16 @@
 
 import UIKit
 
+/**
+ 맥주 목록에서 사용하는 cell
+ */
 final class BeerListCell: UITableViewCell {
     
     // MARK: - Properties
     private let beerImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -43,7 +47,7 @@ final class BeerListCell: UITableViewCell {
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
-        setConstraint()
+        configConstraint()
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -53,12 +57,12 @@ final class BeerListCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         
-        setConstraint()
+        configConstraint()
     }
     
-    // MARK: - private Method
+    // MARK: - Config
     
-    private func setConstraint() {
+    private func configConstraint() {
         addSubviews(beerImageView, idLabel, nameLabel, descriptionLabel)
         
         NSLayoutConstraint.activate([
@@ -94,7 +98,8 @@ final class BeerListCell: UITableViewCell {
     // MARK: - internal Method
     
     func setBeerListCell(_ info: Beer) {
-        idLabel.text = "\(info.id)"
+        guard let id = info.id else { return }
+        idLabel.text = "\(id)"
         nameLabel.text = info.name
         descriptionLabel.text = info.description
         
