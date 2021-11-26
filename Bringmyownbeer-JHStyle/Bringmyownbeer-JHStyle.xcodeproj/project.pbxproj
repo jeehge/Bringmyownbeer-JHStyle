@@ -29,6 +29,7 @@
 		E987D143274FC60600249FF1 /* Ingredients.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D142274FC60600249FF1 /* Ingredients.swift */; };
 		E987D145274FC7E700249FF1 /* APIError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D144274FC7E700249FF1 /* APIError.swift */; };
 		E987D147274FD61900249FF1 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D146274FD61900249FF1 /* URLComponents+Extension.swift */; };
+		E987D14B27510F7100249FF1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14A27510F7100249FF1 /* UIView+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -75,6 +76,7 @@
 		E987D142274FC60600249FF1 /* Ingredients.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ingredients.swift; sourceTree = "<group>"; };
 		E987D144274FC7E700249FF1 /* APIError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIError.swift; sourceTree = "<group>"; };
 		E987D146274FD61900249FF1 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
+		E987D14A27510F7100249FF1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,9 +133,9 @@
 				E987D125274D4A4300249FF1 /* Utils */,
 				E987D0F3274D4A2900249FF1 /* AppDelegate.swift */,
 				E987D0F5274D4A2900249FF1 /* SceneDelegate.swift */,
+				E987D14827510F1000249FF1 /* Supporting Files */,
 				E987D0FC274D4A2A00249FF1 /* Assets.xcassets */,
 				E987D0FE274D4A2A00249FF1 /* LaunchScreen.storyboard */,
-				E987D101274D4A2A00249FF1 /* Info.plist */,
 			);
 			path = "Bringmyownbeer-JHStyle";
 			sourceTree = "<group>";
@@ -179,8 +181,7 @@
 		E987D125274D4A4300249FF1 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				E987D12E274E80C500249FF1 /* String+Extension.swift */,
-				E987D146274FD61900249FF1 /* URLComponents+Extension.swift */,
+				E987D14927510F6200249FF1 /* Extensions */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -204,6 +205,24 @@
 				E987D142274FC60600249FF1 /* Ingredients.swift */,
 			);
 			path = Entity;
+			sourceTree = "<group>";
+		};
+		E987D14827510F1000249FF1 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E987D101274D4A2A00249FF1 /* Info.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E987D14927510F6200249FF1 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				E987D12E274E80C500249FF1 /* String+Extension.swift */,
+				E987D146274FD61900249FF1 /* URLComponents+Extension.swift */,
+				E987D14A27510F7100249FF1 /* UIView+Extension.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -344,6 +363,7 @@
 				E987D145274FC7E700249FF1 /* APIError.swift in Sources */,
 				E987D135274E880D00249FF1 /* NetworkManager.swift in Sources */,
 				E987D131274E813200249FF1 /* CellIdentifierable.swift in Sources */,
+				E987D14B27510F7100249FF1 /* UIView+Extension.swift in Sources */,
 				E987D141274FC5F000249FF1 /* BeerMethod.swift in Sources */,
 				E987D12D274E7E0A00249FF1 /* ViewControllerFromStoryBoard.swift in Sources */,
 				E987D147274FD61900249FF1 /* URLComponents+Extension.swift in Sources */,
@@ -532,7 +552,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Info.plist";
+				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -559,7 +579,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Info.plist";
+				INFOPLIST_FILE = "Bringmyownbeer-JHStyle/Supporting Files/Info.plist";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
