@@ -10,11 +10,31 @@ import UIKit
 final class BeerListCell: UITableViewCell {
     
     // MARK: - Properties
+    private let beerImageView: UIImageView = {
+        let imageView = UIImageView()
+        imageView.translatesAutoresizingMaskIntoConstraints = false
+        return imageView
+    }()
     
-    private let label: UILabel = {
+    private let idLabel: UILabel = {
         let label = UILabel()
-        label.text = "test"
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.textColor = .orange
+        return label
+    }()
+    
+    private let nameLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
+        label.font = .boldSystemFont(ofSize: 18)
+        return label
+    }()
+    
+    private let descriptionLabel: UILabel = {
+        let label = UILabel()
+        label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .gray
+        label.numberOfLines = 3
         return label
     }()
     
@@ -39,12 +59,51 @@ final class BeerListCell: UITableViewCell {
     // MARK: - private Method
     
     private func setConstraint() {
+        addSubviews(beerImageView, idLabel, nameLabel, descriptionLabel)
         
+        NSLayoutConstraint.activate([
+            beerImageView.topAnchor.constraint(equalTo: self.topAnchor),
+            beerImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            beerImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
+            beerImageView.trailingAnchor.constraint(equalTo: self.idLabel.leadingAnchor),
+            beerImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.2)
+        ])
+        
+        NSLayoutConstraint.activate([
+            idLabel.topAnchor.constraint(equalTo: self.topAnchor),
+            idLabel.bottomAnchor.constraint(equalTo: self.nameLabel.topAnchor),
+            idLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
+            idLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            nameLabel.topAnchor.constraint(equalTo: self.idLabel.bottomAnchor),
+            nameLabel.bottomAnchor.constraint(equalTo: self.descriptionLabel.topAnchor),
+            nameLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
+            nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+        ])
+        
+        NSLayoutConstraint.activate([
+            descriptionLabel.topAnchor.constraint(equalTo: self.nameLabel.bottomAnchor),
+            descriptionLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor),
+            descriptionLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
+            descriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+        ])
     }
     
     // MARK: - internal Method
     
-    func setBeerListCell() {
-
+    func setBeerListCell(_ info: Beer) {
+        idLabel.text = "\(info.id)"
+        nameLabel.text = info.name
+        descriptionLabel.text = info.description
+        
+        let url = URL(string: info.imageURL ?? "")
+        DispatchQueue.global().async {
+            let data = try? Data(contentsOf: url!)
+            DispatchQueue.main.async {
+                self.beerImageView.image = UIImage(data: data!)
+            }
+        }
     }
 }
