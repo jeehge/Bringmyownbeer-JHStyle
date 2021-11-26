@@ -7,17 +7,23 @@
 
 import UIKit
 
+/**
+ 맥주 목록 화면
+ */
 final class ListViewController: BaseViewController {
     
     // MARK: - Properties
-    private let tableView: UITableView = {
-        let tableview = UITableView()
-        return tableview
+    
+    private let listTableView: UITableView = {
+        let tableView = UITableView()
+        tableView.translatesAutoresizingMaskIntoConstraints = false
+        return tableView
     }()
     
     private var beerList: [Beer] = []
     
     // MARK: - Life Cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -25,24 +31,25 @@ final class ListViewController: BaseViewController {
         getBeerList()
     }
     
+    // MARK: - Config
+    
     private func configTableView() {
-        tableView.delegate = self
-        tableView.dataSource = self
+        listTableView.delegate = self
+        listTableView.dataSource = self
         
-        tableView.register(BeerListCell.self, forCellReuseIdentifier: BeerListCell.identifier)
+        listTableView.register(BeerListCell.self, forCellReuseIdentifier: BeerListCell.identifier)
         
-        setConstraint()
+        configConstraint()
     }
     
-    private func setConstraint() {
+    private func configConstraint() {
         view.addSubview(tableView)
-        tableView.translatesAutoresizingMaskIntoConstraints = false
         
         NSLayoutConstraint.activate([
-            tableView.topAnchor.constraint(equalTo: self.view.topAnchor),
-            tableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
-            tableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
-            tableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
+            listTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
+            listTableView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
+            listTableView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
+            listTableView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor)
         ])
     }
     
@@ -52,7 +59,7 @@ final class ListViewController: BaseViewController {
             switch result {
             case .success(let result):
                 self.beerList = result
-                self.tableView.reloadData()
+                self.listTableView.reloadData()
             case .failure(let error):
                 print(error)
             }
@@ -61,6 +68,7 @@ final class ListViewController: BaseViewController {
 }
 
 // MARK: - UITableViewDataSource
+
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return beerList.count
@@ -73,8 +81,17 @@ extension ListViewController: UITableViewDataSource {
     }
 }
 
+// MARK: - UITableViewDelegate
+
 extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let detailVC = DetailViewController.viewController(from: .main)
+        detailVC.modalTransitionStyle = .flipHorizontal
+        detailVC.info = beerList[indexPath.row]
+        push(detailVC)
     }
 }
