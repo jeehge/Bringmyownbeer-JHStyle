@@ -19,6 +19,7 @@ final class DetailViewController: BaseViewController {
     private let beerImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.translatesAutoresizingMaskIntoConstraints = false
+        imageView.contentMode = .scaleAspectFit
         return imageView
     }()
     
@@ -40,6 +41,7 @@ final class DetailViewController: BaseViewController {
         let label = UILabel()
         label.translatesAutoresizingMaskIntoConstraints = false
         label.textColor = .gray
+        label.numberOfLines = 0
         return label
     }()
     
@@ -62,7 +64,9 @@ final class DetailViewController: BaseViewController {
             beerImageView.bottomAnchor.constraint(equalTo: self.view.bottomAnchor),
             beerImageView.leadingAnchor.constraint(equalTo: self.view.leadingAnchor),
             beerImageView.trailingAnchor.constraint(equalTo: self.view.trailingAnchor),
-            beerImageView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.4)
+            beerImageView.widthAnchor.constraint(equalTo: self.view.widthAnchor, multiplier: 0.4),
+            beerImageView.heightAnchor.constraint(equalTo: self.view.heightAnchor, multiplier: 0.4),
+            beerImageView.centerXAnchor.constraint(equalTo: self.view.centerXAnchor)
         ])
         
         NSLayoutConstraint.activate([
