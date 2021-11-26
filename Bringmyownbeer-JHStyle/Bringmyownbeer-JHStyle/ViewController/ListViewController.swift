@@ -43,7 +43,7 @@ final class ListViewController: BaseViewController {
     }
     
     private func configConstraint() {
-        view.addSubview(tableView)
+        view.addSubview(listTableView)
         
         NSLayoutConstraint.activate([
             listTableView.topAnchor.constraint(equalTo: self.view.topAnchor),
