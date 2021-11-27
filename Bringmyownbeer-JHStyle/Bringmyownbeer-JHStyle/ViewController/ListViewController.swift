@@ -55,12 +55,23 @@ final class ListViewController: BaseViewController {
     }
     
     private func setup() {
-        NetworkManager.request(api: .beer, parameters: nil) { [weak self] (result: Result <[Beer], APIError>) in
-            guard let self = self else { return }
+//        NetworkManager.request(api: .beer, parameters: nil) { [weak self] (result: Result <[Beer], APIError>) in
+//            guard let self = self else { return }
+//            switch result {
+//            case .success(let result):
+//                self.viewModel = BeerListViewModel(beerList: result)
+//
+//                DispatchQueue.main.async {
+//                    self.listTableView.reloadData()
+//                }
+//            case .failure(let error):
+//                print(error)
+//            }
+//        }
+        BeerService().getBeerList(api: .beer) { (result: Result<[Beer], APIError>) in
             switch result {
             case .success(let result):
                 self.viewModel = BeerListViewModel(beerList: result)
-                
                 DispatchQueue.main.async {
                     self.listTableView.reloadData()
                 }
