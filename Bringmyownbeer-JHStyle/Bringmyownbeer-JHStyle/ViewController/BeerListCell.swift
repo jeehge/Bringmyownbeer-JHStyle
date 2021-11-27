@@ -98,10 +98,9 @@ final class BeerListCell: UITableViewCell {
     // MARK: - internal Method
     
     func setBeerListCell(_ beer: BeerViewModel?) {
-        guard let beer = beer,
-              let id = beer.id else { return }
+        guard let beer = beer else { return }
         
-        idLabel.text = "\(id)"
+        idLabel.text = "\(beer.id)"
         nameLabel.text = beer.name
         descriptionLabel.text = beer.description
         

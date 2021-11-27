@@ -18,8 +18,9 @@ extension BeerViewModel {
 }
 
 extension BeerViewModel {
-    var id: String? {
-        return String(describing: self.beer.id)
+    var id: String {
+        guard let id = self.beer.id else { return "" }
+        return String(describing: id)
     }
     var name: String? {
         return self.beer.name
