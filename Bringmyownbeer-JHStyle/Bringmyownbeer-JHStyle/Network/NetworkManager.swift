@@ -32,7 +32,7 @@ final class NetworkManager {
                         return
                     }
                 } else {
-                    completion(.failure(APIError.errorCode(response.statusCode)))
+                    completion(.failure(.errorCode(response.statusCode)))
                 }
             }
         }.resume()

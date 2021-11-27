@@ -33,6 +33,7 @@
 		E987D14D2751250900249FF1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14C2751250900249FF1 /* UIViewController+Extension.swift */; };
 		E987D15027513EA800249FF1 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14F27513EA800249FF1 /* BeerViewModel.swift */; };
 		E987D1532751C9C200249FF1 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D1522751C9C200249FF1 /* BeerListViewModel.swift */; };
+		E987D1552751EE2100249FF1 /* BeerService.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D1542751EE2100249FF1 /* BeerService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -83,6 +84,7 @@
 		E987D14C2751250900249FF1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E987D14F27513EA800249FF1 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
 		E987D1522751C9C200249FF1 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
+		E987D1542751EE2100249FF1 /* BeerService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -200,6 +202,7 @@
 				E987D134274E880D00249FF1 /* NetworkManager.swift */,
 				E987D137274E8E6E00249FF1 /* API.swift */,
 				E987D144274FC7E700249FF1 /* APIError.swift */,
+				E987D1542751EE2100249FF1 /* BeerService.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -384,6 +387,7 @@
 				E987D135274E880D00249FF1 /* NetworkManager.swift in Sources */,
 				E987D131274E813200249FF1 /* CellIdentifierable.swift in Sources */,
 				E987D14B27510F7100249FF1 /* UIView+Extension.swift in Sources */,
+				E987D1552751EE2100249FF1 /* BeerService.swift in Sources */,
 				E987D141274FC5F000249FF1 /* BeerMethod.swift in Sources */,
 				E987D12D274E7E0A00249FF1 /* ViewControllerFromStoryBoard.swift in Sources */,
 				E987D147274FD61900249FF1 /* URLComponents+Extension.swift in Sources */,
