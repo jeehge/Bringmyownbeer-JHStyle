@@ -20,7 +20,7 @@ final class ListViewController: BaseViewController {
         return tableView
     }()
     
-    private var beerList: [Beer] = []
+    private var viewModel: BeerListViewModel? = nil
     
     // MARK: - Life Cycle
     
@@ -28,7 +28,7 @@ final class ListViewController: BaseViewController {
         super.viewDidLoad()
         
         configTableView()
-        getBeerList()
+        setup()
     }
     
     // MARK: - Config
@@ -37,7 +37,8 @@ final class ListViewController: BaseViewController {
         listTableView.delegate = self
         listTableView.dataSource = self
         
-        listTableView.register(BeerListCell.self, forCellReuseIdentifier: BeerListCell.identifier)
+        listTableView.register(BeerListCell.self,
+                               forCellReuseIdentifier: BeerListCell.identifier)
         
         configConstraint()
     }
@@ -53,13 +54,16 @@ final class ListViewController: BaseViewController {
         ])
     }
     
-    private func getBeerList() {
-        NetworkManager.request(api: .beer, parameters: nil) { [weak self] (result: Result <[Beer], Error>) in
+    private func setup() {
+        NetworkManager.request(api: .beer, parameters: nil) { [weak self] (result: Result <[Beer], APIError>) in
             guard let self = self else { return }
             switch result {
             case .success(let result):
-                self.beerList = result
-                self.listTableView.reloadData()
+                self.viewModel = BeerListViewModel(beerList: result)
+                
+                DispatchQueue.main.async {
+                    self.listTableView.reloadData()
+                }
             case .failure(let error):
                 print(error)
             }
@@ -71,19 +75,29 @@ final class ListViewController: BaseViewController {
 
 extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return beerList.count
+        guard let viewModel = viewModel else { return 0 }
+        return viewModel.numberOfRowsInSection(section)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: BeerListCell.identifier, for: indexPath) as? BeerListCell else { return UITableViewCell()}
-        cell.setBeerListCell(beerList[indexPath.row])
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: BeerListCell.identifier, for: indexPath) as? BeerListCell else { return UITableViewCell() }
+        
+        let beer = viewModel?.articleAtIndex(indexPath.row)
+        cell.setBeerListCell(beer)
         return cell
+        
+        
     }
 }
 
 // MARK: - UITableViewDelegate
 
 extension ListViewController: UITableViewDelegate {
+    func numberOfSections(in tableView: UITableView) -> Int {
+        guard let viewModel = viewModel else { return 0 }
+        return viewModel.numberOfSections
+    }
+    
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 150
     }
@@ -91,7 +105,7 @@ extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewController.viewController(from: .main)
         detailVC.modalTransitionStyle = .flipHorizontal
-        detailVC.info = beerList[indexPath.row]
+        detailVC.info = viewModel?.articleAtIndex(indexPath.row)
         push(detailVC)
     }
 }

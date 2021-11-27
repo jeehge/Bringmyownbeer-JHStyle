@@ -97,18 +97,21 @@ final class BeerListCell: UITableViewCell {
     
     // MARK: - internal Method
     
-    func setBeerListCell(_ info: Beer) {
-        guard let id = info.id else { return }
-        idLabel.text = "\(id)"
-        nameLabel.text = info.name
-        descriptionLabel.text = info.description
+    func setBeerListCell(_ beer: BeerViewModel?) {
+        guard let beer = beer,
+              let id = beer.id else { return }
         
-        let url = URL(string: info.imageURL ?? "")
-        DispatchQueue.global().async {
-            let data = try? Data(contentsOf: url!)
-            DispatchQueue.main.async {
-                self.beerImageView.image = UIImage(data: data!)
-            }
+        idLabel.text = "\(id)"
+        nameLabel.text = beer.name
+        descriptionLabel.text = beer.description
+        
+        let url = URL(string: beer.imageURL ?? "")
+        let data = try? Data(contentsOf: url!)
+        
+        // TODO: - 이미지 캐싱 
+        DispatchQueue.main.async {
+            self.beerImageView.image = UIImage(data: data!)
         }
+        
     }
 }

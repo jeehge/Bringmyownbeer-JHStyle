@@ -32,6 +32,7 @@
 		E987D14B27510F7100249FF1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14A27510F7100249FF1 /* UIView+Extension.swift */; };
 		E987D14D2751250900249FF1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14C2751250900249FF1 /* UIViewController+Extension.swift */; };
 		E987D15027513EA800249FF1 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14F27513EA800249FF1 /* BeerViewModel.swift */; };
+		E987D1532751C9C200249FF1 /* BeerListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D1522751C9C200249FF1 /* BeerListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -81,6 +82,7 @@
 		E987D14A27510F7100249FF1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E987D14C2751250900249FF1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		E987D14F27513EA800249FF1 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
+		E987D1522751C9C200249FF1 /* BeerListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +237,7 @@
 			isa = PBXGroup;
 			children = (
 				E987D14F27513EA800249FF1 /* BeerViewModel.swift */,
+				E987D1522751C9C200249FF1 /* BeerListViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -374,6 +377,7 @@
 				E987D143274FC60600249FF1 /* Ingredients.swift in Sources */,
 				E987D138274E8E6E00249FF1 /* API.swift in Sources */,
 				E987D129274D4D6E00249FF1 /* BaseViewController.swift in Sources */,
+				E987D1532751C9C200249FF1 /* BeerListViewModel.swift in Sources */,
 				E987D15027513EA800249FF1 /* BeerViewModel.swift in Sources */,
 				E987D12F274E80C500249FF1 /* String+Extension.swift in Sources */,
 				E987D145274FC7E700249FF1 /* APIError.swift in Sources */,

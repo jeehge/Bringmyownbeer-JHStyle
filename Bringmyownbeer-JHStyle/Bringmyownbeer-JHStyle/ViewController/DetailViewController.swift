@@ -14,7 +14,7 @@ final class DetailViewController: BaseViewController {
 
     // MARK: - Properties
     
-    var info: Beer?
+    var info: BeerViewModel?
     
     private let beerImageView: UIImageView = {
         let imageView = UIImageView()
