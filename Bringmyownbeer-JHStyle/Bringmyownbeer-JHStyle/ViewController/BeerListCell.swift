@@ -66,32 +66,29 @@ final class BeerListCell: UITableViewCell {
         addSubviews(beerImageView, idLabel, nameLabel, descriptionLabel)
         
         NSLayoutConstraint.activate([
-            beerImageView.topAnchor.constraint(equalTo: self.topAnchor),
-            beerImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            beerImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor),
-            beerImageView.trailingAnchor.constraint(equalTo: self.idLabel.leadingAnchor),
+            beerImageView.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
+            beerImageView.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -8),
+            beerImageView.leadingAnchor.constraint(equalTo: self.leadingAnchor, constant: 16),
             beerImageView.widthAnchor.constraint(equalTo: self.widthAnchor, multiplier: 0.2)
         ])
         
         NSLayoutConstraint.activate([
-            idLabel.topAnchor.constraint(equalTo: self.topAnchor),
-            idLabel.bottomAnchor.constraint(equalTo: self.nameLabel.topAnchor),
-            idLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
-            idLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            idLabel.topAnchor.constraint(equalTo: self.topAnchor, constant: 8),
+            idLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor, constant: 16),
+            idLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
         
         NSLayoutConstraint.activate([
-            nameLabel.topAnchor.constraint(equalTo: self.idLabel.bottomAnchor),
-            nameLabel.bottomAnchor.constraint(equalTo: self.descriptionLabel.topAnchor),
-            nameLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
-            nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            nameLabel.topAnchor.constraint(equalTo: self.idLabel.bottomAnchor, constant: 4),
+            nameLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor, constant: 16),
+            nameLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
         
         NSLayoutConstraint.activate([
-            descriptionLabel.topAnchor.constraint(equalTo: self.nameLabel.bottomAnchor),
-            descriptionLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor),
-            descriptionLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor),
-            descriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor)
+            descriptionLabel.topAnchor.constraint(equalTo: self.nameLabel.bottomAnchor, constant: 16),
+            descriptionLabel.bottomAnchor.constraint(equalTo: self.bottomAnchor, constant: -16),
+            descriptionLabel.leadingAnchor.constraint(equalTo: self.beerImageView.trailingAnchor, constant: 16),
+            descriptionLabel.trailingAnchor.constraint(equalTo: self.trailingAnchor, constant: -16)
         ])
     }
     
