@@ -136,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				E987D123274D4A3500249FF1 /* Common */,
+				E987D13F274FC5C600249FF1 /* Models */,
 				E987D136274E8E5F00249FF1 /* Network */,
 				E987D124274D4A3B00249FF1 /* ViewController */,
 				E987D14E27513E9E00249FF1 /* ViewModel */,
@@ -198,7 +199,6 @@
 		E987D136274E8E5F00249FF1 /* Network */ = {
 			isa = PBXGroup;
 			children = (
-				E987D13F274FC5C600249FF1 /* Entity */,
 				E987D134274E880D00249FF1 /* NetworkManager.swift */,
 				E987D137274E8E6E00249FF1 /* API.swift */,
 				E987D144274FC7E700249FF1 /* APIError.swift */,
@@ -207,14 +207,14 @@
 			path = Network;
 			sourceTree = "<group>";
 		};
-		E987D13F274FC5C600249FF1 /* Entity */ = {
+		E987D13F274FC5C600249FF1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
 				E987D13D274FC4A300249FF1 /* Beer.swift */,
 				E987D140274FC5F000249FF1 /* BeerMethod.swift */,
 				E987D142274FC60600249FF1 /* Ingredients.swift */,
 			);
-			path = Entity;
+			path = Models;
 			sourceTree = "<group>";
 		};
 		E987D14827510F1000249FF1 /* Supporting Files */ = {
