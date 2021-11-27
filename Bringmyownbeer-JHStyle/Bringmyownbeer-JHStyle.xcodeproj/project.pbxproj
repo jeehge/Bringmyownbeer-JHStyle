@@ -31,6 +31,7 @@
 		E987D147274FD61900249FF1 /* URLComponents+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D146274FD61900249FF1 /* URLComponents+Extension.swift */; };
 		E987D14B27510F7100249FF1 /* UIView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14A27510F7100249FF1 /* UIView+Extension.swift */; };
 		E987D14D2751250900249FF1 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14C2751250900249FF1 /* UIViewController+Extension.swift */; };
+		E987D15027513EA800249FF1 /* BeerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E987D14F27513EA800249FF1 /* BeerViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,7 @@
 		E987D146274FD61900249FF1 /* URLComponents+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLComponents+Extension.swift"; sourceTree = "<group>"; };
 		E987D14A27510F7100249FF1 /* UIView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Extension.swift"; sourceTree = "<group>"; };
 		E987D14C2751250900249FF1 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		E987D14F27513EA800249FF1 /* BeerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BeerViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -132,6 +134,7 @@
 				E987D123274D4A3500249FF1 /* Common */,
 				E987D136274E8E5F00249FF1 /* Network */,
 				E987D124274D4A3B00249FF1 /* ViewController */,
+				E987D14E27513E9E00249FF1 /* ViewModel */,
 				E987D125274D4A4300249FF1 /* Utils */,
 				E987D0F3274D4A2900249FF1 /* AppDelegate.swift */,
 				E987D0F5274D4A2900249FF1 /* SceneDelegate.swift */,
@@ -226,6 +229,14 @@
 				E987D14C2751250900249FF1 /* UIViewController+Extension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		E987D14E27513E9E00249FF1 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				E987D14F27513EA800249FF1 /* BeerViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -363,6 +374,7 @@
 				E987D143274FC60600249FF1 /* Ingredients.swift in Sources */,
 				E987D138274E8E6E00249FF1 /* API.swift in Sources */,
 				E987D129274D4D6E00249FF1 /* BaseViewController.swift in Sources */,
+				E987D15027513EA800249FF1 /* BeerViewModel.swift in Sources */,
 				E987D12F274E80C500249FF1 /* String+Extension.swift in Sources */,
 				E987D145274FC7E700249FF1 /* APIError.swift in Sources */,
 				E987D135274E880D00249FF1 /* NetworkManager.swift in Sources */,
