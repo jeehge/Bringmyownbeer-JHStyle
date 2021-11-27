@@ -82,11 +82,9 @@ extension ListViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: BeerListCell.identifier, for: indexPath) as? BeerListCell else { return UITableViewCell() }
         
-        let beer = viewModel?.articleAtIndex(indexPath.row)
+        let beer = viewModel?.beerAtIndex(indexPath.row)
         cell.setBeerListCell(beer)
         return cell
-        
-        
     }
 }
 
@@ -105,7 +103,7 @@ extension ListViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let detailVC = DetailViewController.viewController(from: .main)
         detailVC.modalTransitionStyle = .flipHorizontal
-        detailVC.info = viewModel?.articleAtIndex(indexPath.row)
+        detailVC.info = viewModel?.beerAtIndex(indexPath.row)
         push(detailVC)
     }
 }
