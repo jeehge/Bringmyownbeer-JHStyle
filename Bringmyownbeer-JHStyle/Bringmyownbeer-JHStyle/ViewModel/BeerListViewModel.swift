@@ -20,7 +20,7 @@ extension BeerListViewModel {
         return self.beerList.count
     }
 
-    func articleAtIndex(_ index: Int) -> BeerViewModel {
+    func beerAtIndex(_ index: Int) -> BeerViewModel {
         let list = self.beerList[index]
         return BeerViewModel(list)
     }
