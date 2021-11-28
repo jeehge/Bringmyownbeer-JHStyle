@@ -1,0 +1,22 @@
+# Uncomment the next line to define a global platform for your project
+# platform :ios, '9.0'
+
+target 'Bringmyownbeer-JHStyle' do
+  # Comment the next line if you don't want to use dynamic frameworks
+  use_frameworks!
+
+  # Pods for Bringmyownbeer-JHStyle
+
+  target 'Bringmyownbeer-JHStyleTests' do
+    inherit! :search_paths
+    # Pods for testing
+
+	pod 'RxSwift'
+	pod 'RxCocoa'
+  end
+
+  target 'Bringmyownbeer-JHStyleUITests' do
+    # Pods for testing
+  end
+
+end
