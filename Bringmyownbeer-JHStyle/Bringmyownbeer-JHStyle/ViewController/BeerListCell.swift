@@ -6,6 +6,8 @@
 //
 
 import UIKit
+import RxSwift
+import RxCocoa
 
 /**
  맥주 목록에서 사용하는 cell
@@ -41,6 +43,8 @@ final class BeerListCell: UITableViewCell {
         label.numberOfLines = 3
         return label
     }()
+    
+    let disposeBag = DisposeBag()
     
     // MARK: - Initialize
     
@@ -94,10 +98,20 @@ final class BeerListCell: UITableViewCell {
     
     // MARK: - internal Method
     
-    func setBeerListCell(_ beer: BeerViewModel?) {
-        guard let beer = beer else { return }
+    func setBeerListCell(_ beer: Beer) {
         
-        idLabel.text = "\(beer.id)"
+//        let nameObservable: Observable<String> = Observable.just("권지혜")
+//
+//        nameObservable.subscribe(onNext: { [weak self] in
+//            self?.idLabel.text = $0
+//        }).disposed(by: disposeBag)
+//
+//        nameObservable
+//            .bind(to: idLabel.rx.text)
+//            .disposed(by: disposeBag)
+//        beer.id.map(String.init).flatMap(test)
+//
+        idLabel.text = beer.id.map(String.init)
         nameLabel.text = beer.name
         descriptionLabel.text = beer.description
         
@@ -109,5 +123,9 @@ final class BeerListCell: UITableViewCell {
             self.beerImageView.image = UIImage(data: data!)
         }
         
+    }
+    
+    func test(str: String?) -> String? {
+        return str! + "원"
     }
 }
