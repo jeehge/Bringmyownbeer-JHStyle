@@ -90,7 +90,7 @@ final class DetailViewController: BaseViewController {
     
     private func settingBeerInfo() {
         guard let info = info else { return }
-        idLabel.text = "\(info.id)"
+        idLabel.text = info.id.map(String.init)
         nameLabel.text = info.name
         descriptionLabel.text = info.description
         
